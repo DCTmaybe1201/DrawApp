@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabHost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/tab1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="70dp">
+            <ImageView android:id="@+id/ivLoadedPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+            <Button android:id="@+id/btnLoadPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Load Pic."/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tab2"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="70dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button android:id="@+id/btn_resume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="重新繪圖"/>
+                <Button android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保存圖片"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button android:id="@+id/btnBlack"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#ff000000" />
+                <Button android:id="@+id/btnBlue"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#ff0000ff" />
+                <Button android:id="@+id/btnRed"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#ffff0000" />
+                <Button android:id="@+id/btnGreen"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#ff008000" />
+                <Button android:id="@+id/btnYellow"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff00" />
+                <Button android:id="@+id/btnGray"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#ff808080" />
+                <Button android:id="@+id/btnCyan"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFF" />
+            </LinearLayout>
+            <ImageView android:id="@+id/iv_canvas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab3"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="70dp"></RelativeLayout>
+    </FrameLayout>
+</TabHost>
